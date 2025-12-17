@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ملف تعريفي احترافي</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">واجهة تعارف بسيطة</p>
+      <h1>اربط كل روابطك التعريفية في صفحة واحدة</h1>
+      <p class="lead">
+        صفحة أنيقة لعرض أعمالك وروابطك المهنية مع لمسات تفاعلية خفيفة. عدّل النصوص والروابط بسهولة من ملف JavaScript واحد.
+      </p>
+      <div class="hero__actions">
+        <button id="addLink" class="btn btn--primary">أضف رابط جديد</button>
+        <button id="toggleTheme" class="btn btn--ghost" aria-label="تبديل الوضع اللوني">تبديل الثيم</button>
+      </div>
+      <div class="hero__badge">
+        <span class="dot"></span>
+        <span>جاهز للمشاركة فوراً</span>
+      </div>
+    </div>
+    <div class="hero__panel">
+      <div class="glass">
+        <p>معاينة الروابط</p>
+        <div class="preview" id="preview"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="section__head">
+        <h2>روابطك التعريفية</h2>
+        <p class="muted">يمكنك تعديل القائمة من ملف <code>script.js</code> وإعادة ترتيبها.</p>
+      </div>
+      <div id="links" class="cards"></div>
+    </section>
+
+    <section class="section section--two-col">
+      <div>
+        <h3>تعريف سريع</h3>
+        <p>
+          ضع جملة تعريفية عن عملك، خدماتك، أو شركتك الناشئة. استخدم هذه المساحة لتوضيح قيمة العمل الذي تقدمه وسبب تميزك.
+        </p>
+        <ul class="bullets">
+          <li>تصميم متجاوب يعمل على الجوال والكمبيوتر.</li>
+          <li>أزرار تفاعلية مع تأثيرات مرور سلسة.</li>
+          <li>إمكانية تعديل الألوان والخلفيات بسهولة.</li>
+        </ul>
+      </div>
+      <div class="card card--frosted">
+        <h4>ملاحظات سريعة</h4>
+        <p>غيّر الألوان أو الخطوط من :root في <code>styles.css</code>. حدّث بيانات الروابط من كائن <code>links</code> في <code>script.js</code>.</p>
+        <div class="tips">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact">
+      <div>
+        <h3>تواصل</h3>
+        <p class="muted">ضع بريدك أو وسيلة تواصل مباشرة.</p>
+      </div>
+      <a class="btn btn--primary" href="mailto:hello@example.com">hello@example.com</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>صُممت بلمسات خفيفة لتناسب مختلف العلامات التجارية.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
